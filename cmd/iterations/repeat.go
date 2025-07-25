@@ -4,8 +4,9 @@ import "strings"
 
 func Repeat(s string, r int) string {
 	var repeated strings.Builder
-	for i := 0; i < r; i++ {
+	for range r {
 		repeated.WriteString(s)
 	}
 	return repeated.String()
 }
+
